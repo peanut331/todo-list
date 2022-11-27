@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A simple todo-list!</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="link" rel="stylesheet" href="style.css">
+    <script src="dark.js"></script>
     <script src="https://unpkg.com/vue@2.6.7/dist/vue.js"></script>
   </head>
 
@@ -34,6 +35,13 @@
           </div>
 
     </div>
+
+
+    <div id="div1">
+      <button onclick="swapStyleSheet('dark.css')">Dark Style Sheet</button>
+      <button onclick="swapStyleSheet('style.css')">Default Style Sheet</button>
+    </div>
+
 
     <script>
         const app = new Vue( {
